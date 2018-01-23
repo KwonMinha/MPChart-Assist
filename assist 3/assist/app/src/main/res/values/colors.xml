@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#012A6A</color>
+    <color name="colorPrimaryDark">#002255</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <!-- 기본 컬러 -->
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorGray">#95989A</color>
+    <color name="colorYellow">#FFC900</color>
+    <color name="colorRed">#FF0000</color>
+    <color name="colorBlue">#0000FF</color>
+
+    <color name="colorTextGray">#95989A</color>
+    <color name="colorSkyBlue">#46B2CE</color>
+    <color name="colorNavy">#165388</color>
+    <color name="colorHightPink">#E73770</color>
+    <color name="colorBlueTrans">#284B81</color>
+
+    <color name="colorTrans">#00aa0000</color>
+</resources>

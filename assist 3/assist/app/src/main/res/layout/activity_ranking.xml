@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_sign_up"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context="com.appjam.assist.assist.ranking.RankingActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/top_img"
+            android:layout_width="match_parent"
+            android:layout_height="63dp"
+            android:background="@drawable/top_background_shadow" />
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="17dp"
+            android:background="@drawable/go_home"
+            android:gravity="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="랭킹"
+            android:textColor="#ffffff"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <Spinner
+        android:id="@+id/spinner1"
+        android:layout_marginLeft="10dp"
+        android:layout_width="136dp"
+        android:layout_height="25dp"
+        android:layout_below="@+id/top"
+        android:popupElevation="12dp"
+        android:gravity="center"
+        android:layout_alignTop="@+id/spin_image"
+        android:background="@null"
+        android:elevation="12dp"
+        android:layout_marginBottom="20dp"
+        android:popupBackground="@drawable/round_spinner_drop" />
+
+    <!--<ImageView-->
+    <!--android:layout_width="14dp"-->
+    <!--android:layout_height="14dp"-->
+    <!--android:layout_marginTop="17dp"-->
+    <!--android:layout_marginLeft="150dp"-->
+    <!--android:elevation="12dp"-->
+    <!--android:layout_below="@+id/top"-->
+    <!--android:background="@drawable/ic_expand_more_l" />-->
+
+    <ImageView
+        android:layout_marginTop="65dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/spin_image"
+        android:background="@drawable/list_view_ranking"/>
+
+    <ImageView
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="125dp"
+        android:layout_width="14dp"
+        android:layout_height="14dp"
+        android:background="@drawable/ic_expand_more_l"/>
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_below="@+id/spinner1"-->
+    <!--android:background="@color/colorPrimaryDark"-->
+    <!--android:id="@+id/header"-->
+    <!--android:paddingBottom="11dp"-->
+    <!--android:paddingTop="11dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/num"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="등수"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/name"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="팀명"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/age"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="총 경기"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/pos"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="승"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/count"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="무"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/goal"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="패"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/assist"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_weight="1"-->
+    <!--android:gravity="center"-->
+    <!--android:text="승률"-->
+    <!--android:textColor="@color/colorWhite"-->
+    <!--android:textSize="@dimen/basic_text" />-->
+    <!--</LinearLayout>-->
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rank_recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinner1">
+
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="219dp"
+    android:layout_height="139dp"
+    android:orientation="vertical"
+    android:background="@drawable/popup_background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="23dp"
+        android:layout_marginBottom="19dp"
+        android:text="다음으로 넘어가면\n포메이션 설정을 바꿀 수 없습니다.\n완료하시겠습니까?"
+        android:textColor="#ffffff"
+        android:textSize="11sp" />
+
+    <RelativeLayout
+        android:layout_width="219dp"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_cancel"
+            android:background="@drawable/no_button"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:elevation="12dp"
+            android:layout_marginLeft="42dp"
+            android:layout_marginTop="13dp"
+            android:text="아니오"
+            android:textSize="13sp"
+            android:textColor="#ffffff"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="54dp"
+            android:layout_marginTop="13dp"
+            android:elevation="24dp"
+            android:text="예"
+            android:textSize="13sp"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_ok"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/yes_button"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

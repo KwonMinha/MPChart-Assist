@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <!-- ////////////////////////// 팀의 순위 ////////////////////////// -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="득점 순위"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ////////////////////////// 득점 순위 ////////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- //////////////////////////   1   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_score1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_score_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_score_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="12득점" />
+            </LinearLayout>
+            <!-- //////////////////////////   2   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_score2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_score_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_score_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+            <!-- //////////////////////////   3   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_score3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_score_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_score_num3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+            <!-- //////////////////////////   4   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_score4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_score_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_score_num4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- ////////////////////////// 도움 순위 ////////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:text="도움 순위"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- ////////////////////////// 순위 들 ////////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <!-- //////////////////////////   1   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_assist1"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_assist_name1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_assist_num1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+            <!-- //////////////////////////   2   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_assist2"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_assist_name2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_assist_num2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+            <!-- //////////////////////////   3   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_assist3"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_assist_name3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_assist_num3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+            <!-- //////////////////////////   4   ////////////////////////// -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/iv_assist4"
+                    android:layout_width="45dp"
+                    android:layout_height="45dp"
+                    android:background="@drawable/profile_s_teamdata" />
+
+                <TextView
+                    android:id="@+id/tv_assist_name4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+
+                <TextView
+                    android:id="@+id/tv_assist_num4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text"
+                    tools:text="오혜성" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

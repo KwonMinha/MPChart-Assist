@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    android:id="@+id/linearLayout_sign_detail"
+    tools:context="com.appjam.assist.assist.login.SignupDetailActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/top_chevron_left" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="회원가입"
+            android:background="@color/colorTrans"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="29dp"
+            android:text="상세 정보"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="@dimen/basic_text" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="22dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="81dp"
+                    android:layout_height="81dp"
+                    android:background="@drawable/profile" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_gallery"
+                android:layout_marginBottom="5dp"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/camera" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="52dp"
+            android:layout_marginRight="52dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="나이"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <EditText
+                    android:id="@+id/sign_up_detail_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="12dp"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:nextFocusDown="@+id/sign_up_detail_tall"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="신장"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <EditText
+                    android:id="@+id/sign_up_detail_tall"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:inputType="number"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:nextFocusDown="@+id/sign_up_detail_weight"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="체중"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <EditText
+                    android:id="@+id/sign_up_detail_weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_weight="1"
+                    android:inputType="number"
+                    android:background="@null"
+                    android:gravity="bottom"
+                    android:nextFocusDown="@+id/sign_up_detail_foot"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="주발"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom">
+
+                    <Spinner
+                        android:id="@+id/spinner_foot"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:background="@null"
+                        android:popupBackground="@drawable/round_spinner_drop"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/basic_text" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginLeft="80dp"
+                        android:background="@drawable/ic_expand_more_l"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginRight="12dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="27dp"
+                    android:text="등번호"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <EditText
+                    android:id="@+id/sign_up_detail_number"
+                    android:layout_width="65dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:background="@null"
+                    android:inputType="number"
+                    android:gravity="bottom"
+                    android:nextFocusDown="@+id/spinnerPostion1"
+                    android:singleLine="true"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text" />
+
+                <Button
+                    android:id="@+id/check_backnum"
+                    android:layout_width="61dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom"
+                    android:background="@drawable/overlap_check" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginRight="73dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="top"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:id="@+id/position"
+                    android:text="포지션"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="bottom">
+
+                    <Spinner
+                        android:id="@+id/spinnerPostion1"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:background="@null"
+                        android:popupBackground="@drawable/round_spinner_drop"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/basic_text" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:layout_marginLeft="80dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginTop="8dp"
+                        android:background="@drawable/ic_expand_more_l"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="6dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.6dp"
+                    android:layout_marginRight="120dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorSkyBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="31dp"
+                    android:text="상세 포지션"
+                    android:id="@+id/detailPosition"
+                    android:textColor="@color/colorSkyBlue"
+                    android:textSize="@dimen/basic_text" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_gravity="bottom"
+                    android:orientation="horizontal">
+
+                    <Spinner
+                        android:id="@+id/spinnerPosition2"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="18dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_alignParentBottom="true"
+                        android:gravity="bottom"
+                        android:background="@null"
+                        android:popupBackground="@drawable/round_spinner_drop"
+                        android:spinnerMode="dropdown"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/basic_text" />
+
+                    <ImageView
+                        android:layout_width="14dp"
+                        android:layout_height="14dp"
+                        android:elevation="12dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="144dp"
+                        android:layout_alignParentBottom="true"
+                        android:background="@drawable/ic_expand_more_l"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.6dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="4dp"
+                android:background="@color/colorSkyBlue" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+
+
+                <Button
+                    android:id="@+id/btn_done"
+                    android:layout_width="246dp"
+                    android:layout_height="25dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="40dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="@drawable/button_selector_complete"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/basic_text" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    tools:context="com.appjam.assist.assist.data.DataActivity">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:background="@drawable/top_background_darkblue"
+        android:layout_gravity="center"
+        android:layout_height="63dp">
+
+        <Button
+            android:id="@+id/btn_home"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="23dp"
+            android:layout_marginLeft="17dp"
+            android:gravity="center"
+            android:background="@drawable/go_home" />
+
+        <Button
+            android:id="@+id/btn_game"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@color/colorTrans"
+            android:text="경기기록"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#00aa0000"
+            android:layout_marginBottom="15dp"
+            android:text="팀 기록"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_personal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_gravity="center"
+            android:background="#00aa0000"
+            android:text="개인기록"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>

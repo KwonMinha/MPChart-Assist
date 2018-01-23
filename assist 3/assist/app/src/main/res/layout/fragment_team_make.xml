@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout_team_make"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="30dp"
+        android:paddingRight="30dp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="34dp"
+            android:layout_marginTop="40dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/iv_profile"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@drawable/team_logo_l" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/iv_gallery"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/camera" />
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="팀명"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text" />
+
+            <EditText
+                android:id="@+id/et_teamname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text"
+                tools:text="FC Ligers" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorSkyBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="지역"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:id="@+id/spinner_region"
+                    android:layout_width="100dp"
+                    android:layout_height="16dp"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginRight="91dp"
+                    android:background="@null"
+                    android:elevation="12dp"
+                    android:gravity="left"
+                    android:popupBackground="@drawable/round_spinner_drop"
+                    android:spinnerMode="dropdown"
+                    android:src="@drawable/ic_expand_more_s"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="14dp"
+                    android:layout_height="14dp"
+                    android:layout_marginLeft="112dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_expand_more_l"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorSkyBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="감독"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text" />
+
+            <EditText
+                android:id="@+id/et_manager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text"
+                tools:text="오혜썽" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorSkyBlue" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:text="창단일"
+                android:textColor="@color/colorSkyBlue"
+                android:textSize="@dimen/basic_text" />
+
+            <EditText
+                android:id="@+id/et_found"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:background="@null"
+                android:inputType="number"
+                android:maxLength="10"
+                android:singleLine="true"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text"
+                tools:text="2017.03.10" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.6dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/colorSkyBlue" />
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="10dp"
+            android:text="팀 소개"
+            android:textColor="@color/colorSkyBlue"
+            android:textSize="@dimen/basic_text" />
+
+        <EditText
+            android:id="@+id/et_msg"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/round_skyblue_trans"
+            android:maxLength="100"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/basic_text"
+            tools:text="안녕하세요 오혜성입니다" />
+
+        <Button
+            android:id="@+id/btn_done"
+            android:layout_width="246dp"
+            android:layout_height="25dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/button_selector_complete"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/basic_text" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,73 @@
+<resources>
+    <string name="app_name">Assist</string>
+    <string name="facebook_app_id">1220514704741383</string>
+    <string name="fb_login_protocol_scheme">fb1220514704741383</string>
+    <!-- 스피너 -->
+    <string-array name="spinnerPosition1_do">
+        <item>수비수</item>
+        <item>골키퍼</item>
+        <item>공격수</item>
+        <item>미드필더</item>
+    </string-array>
+
+    <string-array name="spinnerDefense">
+        <item>중앙수비수(CB)</item>
+        <item>측면수비수(FB)</item>
+        <item>윙백(WB)</item>
+    </string-array>
+
+    <string-array name="spinnerGoalkeeper">
+        <item>골키퍼(GK)</item>
+    </string-array>
+
+    <string-array name="spinnerStriker">
+        <item>스트라이커(ST)</item>
+        <item>윙포워드(WF)</item>
+        <item>센터포워드(CF)</item>
+    </string-array>
+
+    <string-array name="spinnerMid">
+        <item>공격형미드필더(AM)</item>
+        <item>수비형미드필더(DM)</item>
+        <item>윙어(WM)</item>
+    </string-array>
+
+    <string-array name="spinnerlocal_do">
+        <item>성남시</item>
+    </string-array>
+
+    <string-array name="spinnermyPosition1_do">
+
+        <item>수비수</item>
+        <item>골키퍼</item>
+        <item>공격수</item>
+        <item>미드필더</item>
+    </string-array>
+
+    <string-array name="spinnermyDefense">
+        <item>중앙수비수(CD)</item>
+        <item>측면수비수(FB)</item>
+        <item>윙백(WB)</item>
+    </string-array>
+
+    <string-array name="spinnermyGoalkeeper">
+        <item>골키퍼(GK)</item>
+    </string-array>
+
+    <string-array name="spinnermyStriker">
+        <item>스트라이커(ST)</item>
+        <item>윙포워드(WF)</item>
+        <item>센터포워드(CF)</item>
+    </string-array>
+
+    <string-array name="spinnermyMid">
+        <item>공격형미드필더(AM)</item>
+        <item>수비형미드필더(DM)</item>
+        <item>윙어(WM)</item>
+    </string-array>
+
+    <string-array name="spinnerFoot">
+        <item>right</item>
+        <item>left</item>
+    </string-array>
+</resources>

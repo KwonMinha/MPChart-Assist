@@ -1,0 +1,513 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_my_page2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context="com.appjam.assist.assist.mypage.MyPageActivity2">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar2"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:src="@drawable/top_background_darkblue">
+
+        <ImageButton
+            android:id="@+id/mypage2_back_btn"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/go_home" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="마이페이지"
+            android:textColor="@color/colorWhite"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mypage2_finish_btn"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="17dp"
+            android:background="#00ff0000"
+            android:text="완료"
+                android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="153dp"
+                android:background="@color/colorPrimaryDark">
+
+                <ImageView
+                    android:id="@+id/mypage2_image1"
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginRight="114dp"
+                    android:layout_marginTop="17dp"
+                    android:src="@drawable/team_logo_m" />
+
+                <ImageView
+                    android:id="@+id/mypage2_image2"
+                    android:layout_width="114dp"
+                    android:layout_height="114dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="142dp"
+                    android:layout_marginTop="36dp"
+                    android:src="@drawable/mypage_profile" />
+
+                <ImageButton
+                    android:id="@+id/mypage2_upload_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="152dp"
+                    android:background="@null"
+                    android:src="@drawable/camera" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="이름"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_name_edit"
+                        android:layout_width="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="이메일"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <TextView
+                        android:id="@+id/mypage2_sign_up_email_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="포지션"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom">
+
+                        <Spinner
+                            android:id="@+id/spinnermyPosition1"
+                            android:layout_width="80dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="18dp"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:popupBackground="@drawable/round_spinner_drop"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/basic_text" />
+
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/ic_expand_more_l"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:text="상세포지션"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="bottom">
+
+                        <Spinner
+                            android:id="@+id/spinnermyPosition2"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="18dp"
+                            android:layout_alignParentRight="true"
+                            android:gravity="center"
+                            android:background="@null"
+                            android:popupBackground="@drawable/round_spinner_drop"
+                            android:spinnerMode="dropdown"
+                            android:textColor="@color/colorWhite"
+                            android:textSize="@dimen/basic_text" />
+                        <ImageView
+                            android:layout_width="14dp"
+                            android:layout_height="14dp"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="80dp"
+                            android:layout_marginTop="8dp"
+                            android:background="@drawable/ic_expand_more_l"/>
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="나이"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_age_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="신장"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_height_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="체중"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_weight_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="주발"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_foot_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorPrimary"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:layout_marginTop="16dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="등번호"
+                        android:layout_gravity="center"
+                        android:textColor="@color/colorSkyBlue"
+                        android:textSize="@dimen/basic_text" />
+
+                    <EditText
+                        android:id="@+id/mypage2_sign_up_number_edit"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="38dp"
+                        android:layout_gravity="center"
+                        android:background="@null"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginLeft="58dp"
+                    android:layout_marginRight="58dp"
+                    android:background="@color/colorSkyBlue" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

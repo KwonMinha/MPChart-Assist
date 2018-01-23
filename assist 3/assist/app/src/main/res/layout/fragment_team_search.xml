@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/linearLayout_team_search"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="37dp"
+        android:layout_marginRight="37dp"
+        android:layout_weight="2"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="팀명"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/basic_text" />
+
+        <EditText
+            android:id="@+id/et_teamname"
+            android:layout_width="286dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/round_white"
+            android:imeOptions="actionDone"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#95989A"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="지역"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/basic_text" />
+
+
+        <RelativeLayout
+            android:layout_width="286dp"
+            android:layout_height="34dp"
+            android:layout_marginRight="3dp"
+            android:background="@drawable/round_white"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spinneLocal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:gravity="center"
+                android:popupBackground="@drawable/round_spinner_drop"
+                android:spinnerMode="dropdown"
+                android:textColor="@color/colorTextGray"
+                android:textSize="@dimen/basic_text" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:layout_marginRight="5dp"
+                android:src="@drawable/ic_expand_more_l" />
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="감독명"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/basic_text" />
+
+        <EditText
+            android:id="@+id/et_manager"
+            android:layout_width="286dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="7dp"
+            android:background="@drawable/round_white"
+            android:imeOptions="actionDone"
+            android:paddingLeft="10dp"
+            android:singleLine="true"
+            android:textColor="#95989A"
+            android:textSize="13sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp">
+
+            <Button
+                android:id="@+id/btn_clear"
+                android:layout_width="138dp"
+                android:layout_height="25dp"
+                android:layout_weight="1"
+                android:background="@drawable/gray_button_initialization"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text" />
+
+            <Button
+                android:id="@+id/btn_search"
+                android:layout_width="138dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="1"
+                android:background="@drawable/blue_button_search"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="팀명"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="지역"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="감독"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/basic_text" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimary" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="18dp"
+            tools:listitem="@layout/item_team_search"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+</LinearLayout>

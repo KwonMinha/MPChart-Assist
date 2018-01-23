@@ -1,0 +1,339 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    tools:context="com.appjam.assist.assist.data.WriteGameRecordActivity2">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/top_chevron_left"
+            android:id="@+id/btn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_alignBaseline="@+id/previousBtn"
+            android:id="@+id/textView"
+            android:text="경기기록입력"
+            android:textColor="#ffffff"/>
+
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="20dp"
+            android:text="완료"
+            android:background="#00ff0000"
+            android:textColor="@color/colorWhite"
+            android:layout_marginRight="21dp"
+            android:onClick="onClickView"
+            android:id="@+id/completeBtn"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- item_game_record -->
+
+                <LinearLayout
+                    android:background="@color/colorPrimaryDark"
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_marginLeft="17dp"
+                        android:textColor="@color/colorWhite"
+                        android:textSize="@dimen/basic_text"
+                        android:text="2017년 6월 8일" />
+
+                    <LinearLayout
+                        android:id="@+id/first_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/logo1"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@mipmap/ic_launcher" />
+
+                                <TextView
+                                    android:id="@+id/name1"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="team1"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/small_text" />
+
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/score1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="15dp"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/large_more_text"
+                                android:textStyle="bold"
+                                android:text="1" />
+
+                            <TextView
+                                android:id="@+id/vs"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:text=":"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/large_more_text"
+                                android:textStyle="bold" />
+
+                            <TextView
+                                android:id="@+id/score2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginRight="15dp"
+                                android:text="2"
+                                android:textColor="@color/colorWhite"
+                                android:textSize="@dimen/large_more_text" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:id="@+id/logo2"
+                                    android:layout_width="50dp"
+                                    android:layout_height="50dp"
+                                    android:background="@mipmap/ic_launcher" />
+
+                                <TextView
+                                    android:id="@+id/name2"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="team2"
+                                    android:textColor="@color/colorWhite"
+                                    android:textSize="@dimen/small_text" />
+
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/test_view"
+                    android:layout_gravity="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    tools:background="@drawable/ground_343">
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="11dp"
+                    android:background="@drawable/reserve_background"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="17dp"
+                        android:textColor="#ffffff"
+                        android:text="후보" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@drawable/reserve_chevron_left"
+                            android:layout_marginLeft="5dp"
+                            android:id="@+id/pre_player"/>
+
+                        <android.support.v7.widget.RecyclerView
+                            android:layout_width="270dp"
+                            android:layout_height="40dp"
+                            android:id="@+id/recyclerView_h">
+                        </android.support.v7.widget.RecyclerView>
+
+                        <Button
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginRight="5dp"
+                            android:background="@drawable/reserve_chevron_right"
+                            android:id="@+id/next_player"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:gravity="right"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@+id/goalBtn"
+                        android:background="@drawable/goal_button"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp" />
+
+                    <Button
+                        android:id="@+id/helpBtn"
+                        android:background="@drawable/assist_button"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp" />
+
+                    <Button
+                        android:id="@+id/loseBtn"
+                        android:background="@drawable/goal_conceded_button"
+                        android:layout_width="60dp"
+                        android:layout_height="80dp" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="#265a87" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="득점 - 도움" />
+
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="25dp"
+                        android:layout_gravity="center"
+                        android:background="#265a87" />
+
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:textColor="#ffffff"
+                        android:text="실점" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="1dp"
+                    android:layout_gravity="center"
+                    android:background="#265a87" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="horizontal">
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recyclerView2"
+                        android:layout_weight="0.5"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                    </android.support.v7.widget.RecyclerView>
+
+                </LinearLayout>
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recyclerView3"
+                    android:layout_weight="1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                </android.support.v7.widget.RecyclerView>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+</LinearLayout>

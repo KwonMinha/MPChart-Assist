@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="333dp"
+    android:layout_height="233dp"
+    android:background="@drawable/ground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <!-- ////////////////////// 1열 ////////////////////// -->
+
+        <Button
+            android:id="@+id/goal_keeper"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginBottom="108dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="33dp"
+            android:layout_marginTop="115dp"
+            android:background="@drawable/t_shirts_reserve"
+            android:text="00"
+            android:textSize="15sp" />
+
+        <!-- ////////////////////// 2열 ////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="31dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/player1"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:layout_marginBottom="15dp"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player2"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player3"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player4"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+        <!-- ////////////////////// 3열 ////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/player5"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:layout_marginBottom="20dp"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player6"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player7"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <!-- ////////////////////// 4열 ////////////////////// -->
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="22dp"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/player8"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:layout_marginBottom="20dp"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player9"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/player10"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/t_shirts_reserve"
+                android:text="00"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

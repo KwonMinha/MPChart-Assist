@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.appjam.assist.assist.login.MakeTeamActivity"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/go_home" />
+
+        <Button
+            android:id="@+id/btn__search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="팀 검색"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btn_make"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="74dp"
+            android:layout_gravity="center"
+            android:background="@null"
+            android:text="팀 창단"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/large_text"
+            android:textStyle="bold" />
+
+    </android.support.v7.widget.Toolbar>
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark"></FrameLayout>
+</LinearLayout>
